@@ -1,8 +1,74 @@
-#masthead {
-    height: 50px;
+#header-lp, #header {
+	position: absolute;
+    height: 60px;
+    padding: 10px;
+}
+#header-lp {
+	bottom: 0;
+}
+#header {
+	top: 0;
 }
 #branding {
-    text-align: center;
+	background-image: url('images/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 40 40;
+	height: 50px;
+	padding-left: 50px;
+}
+.lp {
+	text-align: center;
+	margin-top: 100px;
+}
+#content {
+	margin-top: 110px;
+}
+
+/* Vitals Page */
+#vital {
+	width: 100%;
+	height: 80px;
+	margin-top: 18px;
+	background: #EEE;
+	position: relative;
+}
+.vital-icon {
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+}
+.vital-name {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.expand-vital {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+/* Profile Page */
+.patient-avatar {
+	float: left;
+	width: 30%;
+}
+.patient-profile {
+	float: right;
+	width: 70%;
+}
+ul.patient-profile-items {
+	padding-left: 0;
+}
+ul.patient-profile-items li {
+	list-style: none;
+}
+label {
+	display: inline-block;
+	width: 100px;
+	font-style: italic;
+	text-align: right;
+	margin-right: 5px;
 }
 h2 {
     font-style: italic;
