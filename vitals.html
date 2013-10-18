@@ -2,83 +2,188 @@
 <html>
 <head>
     <title>Berkeley Hospital OS | Prototype</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="header">
-        <div id="branding">
-            <div class="site-name">Berkeley Hospital OS</div>
-            <div class="site-description">MVP v1.0</div>
+    <div id="wrapper">
+        <div id="header">
+            <div id="branding">
+                <div class="site-name">Berkeley Hospital OS</div>
+                <div class="site-description">MVP v1.0</div>
+                <a href="index.html" class="link-span"></a>
+            </div>
+            <div id="nav-menu">
+                <ul class="navigation">
+                    <li class="nav-item-profile">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item-vitals active-menu-item">
+                        <a href="vitals.html" class="nav-link">Vitals</a>
+                    </li>
+                    <li class="nav-item-diagnosis">
+                        <a href="diagnosis.html" class="nav-link">Diagnosis</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="nav-menu">
-            <ul class="navigation lp-nav">
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="vitals.html">Vitals</a></li>
-                <li><a href="diagnosis.html">Diagnosis</a></li>
-            </ul>
+        <div id="content">
+            <div class="vital">
+                <div class="vital-icon">
+                    <img src="css/images/cholesterol-icon.png" width="36" height="36" />
+                </div>
+                <div class="vital-name">Cholesterol</div>
+                <div class="vital-value high-risk">230 mg/dL</div>
+                <div class="vital-overlay-wrapper">
+                    <div class="vital-overlay">
+                        <div class="vital-icon-overlay">
+                            <img src="css/images/cholesterol-icon.png" width="36" height="36" />
+                        </div>
+                        <div class="vital-overlay-name">Cholesterol</div>
+                        <div class="vital-overlay-content">
+                            <ul class="vital-breakdown">
+                                <li>
+                                    <label>Total:</label>
+                                    <div class="vital-overlay-value-date">
+                                        <div class="vital-overlay-value high-risk">220 mg/dL</div>
+                                        <div class="vital-date">(September 25<sup>th</sup>, 2013)
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>HDL:</label>
+                                    <div class="vital-overlay-value-date">
+                                        <div class="vital-overlay-value high-risk">38 mg/dL</div>
+                                        <div class="vital-date">(September 25<sup>th</sup>, 2013)
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Risk:</label>
+                                    <div class="vital-risk-description">
+                                        Your cholesterol is high risk.
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Details:</label>
+                                    <div class="vital-value-explanation">When too much LDL (bad) cholesterol circulates in the blood, it can slowly build up in the inner walls of the arteries that feed the heart and brain <a href="#">[more]</a></p>
+                                </li>
+                            </ul>
+                            <div class="vital-stats">
+                                <p>
+                                    <img src="images/cholesterol-chart.png" class="vital-stats-image" />
+                                </p>
+                                <p>
+                                    <img src="images/risk.png" class="vital-stats-image" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="close-overlay">
+                            <img src="css/images/collapse-icon.png" width="36" height="36" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vital">
+                <div class="vital-icon">
+                    <img src="css/images/bloodpressure-icon.png" width="36" height="36" />
+                </div>
+                <div class="vital-name">Blood pressure</div>
+                <div class="vital-value medium-risk">130/90</div>
+                <div class="vital-overlay-wrapper">
+                    <div class="vital-overlay">
+                        <div class="vital-icon-overlay">
+                            <img src="css/images/bloodpressure-icon.png" width="36" height="36" />
+                        </div>
+                        <div class="vital-overlay-name">Blood pressure</div>
+                        <div class="vital-overlay-content">
+                            <ul class="vital-breakdown">
+                                <li>
+                                    <label>Yours:</label>
+                                    <div class="vital-overlay-value-date">
+                                        <div class="vital-overlay-value medium-risk">130/90</div>
+                                        <div class="vital-date">(September 25<sup>th</sup>, 2013)
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Risk:</label>
+                                    <div class="vital-risk-description">
+                                        You are at risk of prehypertension.
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Details:</label>
+                                    <div class="vital-value-explanation">
+                                        <p>The first number (systolic), which is also the higher of the two numbers, measures the... <a href="#">[more]</a></p>
+                                        <p>The second number (diastolic), which is also the lower of the two numbers, measures the... <a href="#">[more]</a></p>
+                                </li>
+                            </ul>
+                            <div class="vital-stats">
+                                <p>
+                                    <img src="images/bp-chart.png" class="vital-stats-image" />
+                                </p>
+                                <p>
+                                    <img src="images/risk.png" class="vital-stats-image" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="close-overlay">
+                            <img src="css/images/collapse-icon.png" width="36" height="36" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vital">
+                <div class="vital-icon">
+                    <img src="css/images/glucose-icon.png" width="36" height="36" />
+                </div>
+                <div class="vital-name">Blood glucose level</div>
+                <div class="vital-value low-risk">100 mg/dL</div>
+                <div class="vital-overlay-wrapper">
+                    <div class="vital-overlay">
+                        <div class="vital-icon-overlay">
+                            <img src="css/images/glucose-icon.png" width="36" height="36" />
+                        </div>
+                        <div class="vital-overlay-name">Blood glucose level</div>
+                        <div class="vital-overlay-content">
+                            <ul class="vital-breakdown">
+                                <li>
+                                    <label>Yours:</label>
+                                    <div class="vital-overlay-value-date">
+                                        <div class="vital-overlay-value low-risk">100 mg/dL</div>
+                                        <div class="vital-date">(September 25<sup>th</sup>, 2013)
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Risk:</label>
+                                    <div class="vital-risk-description">
+                                        Your glucose level is healthy!
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Details:</label>
+                                    <div class="vital-value-explanation">A blood glucose test measures the amount of a type of sugar, called glucose, in your blood. Glucose comes from carbohydrate... <a href="#">[more]</a></p>
+                                </li>
+                            </ul>
+                            <div class="vital-stats">
+                                <p>
+                                    <img src="images/bloodsugar-chart.png" class="vital-stats-image" />
+                                </p>
+                                <p>
+                                    <img src="images/risk.png" class="vital-stats-image" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="close-overlay">
+                            <img src="css/images/collapse-icon.png" width="36" height="36" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-visit">
+                Vitals last updated September 25th, 2013
+            </div>
         </div>
     </div>
-    <div id="content">
-        <div id="vital">
-            <div class="vital-icon">
-                <img src="bp-icon.jpg" />
-            </div>
-            <div class="vital-name">Blood pressure</div>
-            <div class="vital-value">130/90</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-        <div id="vital">
-            <div class="vital-icon">
-                <img src="chol-icon.jpg" />
-            </div>
-            <div class="vital-name">Cholesterol</div>
-            <div class="vital-value">50mg/l</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-        <div id="vital">
-            <div class="vital-icon">
-                <img src="bloodsugar-icon.jpg" />
-            </div>
-            <div class="vital-name">Blood Sugar Level</div>
-            <div class="vital-value">40mg/l</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-                <div id="vital">
-            <div class="vital-icon">
-                <img src="bp-icon.jpg" />
-            </div>
-            <div class="vital-name">Blood pressure</div>
-            <div class="vital-value">130/90</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-        <div id="vital">
-            <div class="vital-icon">
-                <img src="chol-icon.jpg" />
-            </div>
-            <div class="vital-name">Cholesterol</div>
-            <div class="vital-value">50mg/l</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-        <div id="vital">
-            <div class="vital-icon">
-                <img src="bloodsugar-icon.jpg" />
-            </div>
-            <div class="vital-name">Blood Sugar Level</div>
-            <div class="vital-value">40mg/l</div>
-            <div class="expand-vital">
-                <img src="expand-icon.jpg" />
-            </div>
-        </div>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
